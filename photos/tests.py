@@ -19,7 +19,7 @@ class LocationTestCase(TestCase):
     def test_get_locations(self):
         self.location.save_location()
         all_locations = Location.objects.all()
-        self.assertTrue(len(all_locations) > 0)
+        self.asserTrue(len(all_locations) > 0)
         
         
 class ImageTestCase(TestCase):    
