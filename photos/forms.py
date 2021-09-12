@@ -12,14 +12,14 @@ class NewsLetterForm(forms.Form):
 class NewImageForm(forms.ModelForm):
     class Meta:
         model = Image
-        exclude = ['Author', 'image_name', 'pub_date', 'author_profile', 'likes']
+        eclude = ['Author', 'image_name', 'pub_date', 'author_profile', 'likes']
         widgets = {'description': forms.Textarea(attrs={'rows':4, 'cols':10,}),}
         
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
         exclude = ['user']
-        idgets = {'bio': forms.Textarea(attrs={'rows':2, 'cols':10,}),}
+        widgets = {'bio': forms.Textarea(attrs={'rows':2, 'cols':10,}),}
         
         
 class RegisterForm(RegistrationForm):
