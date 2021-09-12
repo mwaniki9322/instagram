@@ -63,7 +63,7 @@ class Image(models.Model):
     @classmethod
     def get_by_author(cls, Author):
         images = cls.objects.filter(Author=Author)
-        return image
+        return images
     
     def total_likes(self):
         self.likes.count()
