@@ -13,7 +13,7 @@ class NewImageForm(forms.ModelForm):
     class Meta:
         model = Image
         exclude = ['Author', 'image_name', 'pub_date', 'author_profile', 'likes']
-        wigets = {'description': forms.Textarea(attrs={'rows':4, 'cols':10,}),}
+        widgets = {'description': forms.Textarea(attrs={'rows':4, 'cols':10,}),}
         
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
