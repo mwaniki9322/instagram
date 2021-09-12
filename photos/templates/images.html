@@ -16,7 +16,7 @@
                 {% if image.image_file %}
                 <img class="card-img-top pl-1 pr-1" src="{{image.image_file.url}}" alt="{{ image_item.image_name }}">
                 {% else %}
-                <img  class="card-img-tosrc="https://source.unsplash.com/1600x900/?fun,vacation" alt="{{ image_item.image_name }}">
+                <img  class="card-img-top" src="https://source.unsplash.com/1600x900/?fun,vacation" alt="{{ image_item.image_name }}">
                 {% endif %}
             <a href="/image/{{image.id}}">
                 <div class="mask rgba-white-slight"></div>
