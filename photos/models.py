@@ -30,7 +30,7 @@ class Profile(models.Model):
     
     class Meta:
         verbose_name = 'Profile'
-        verbose_name_plural = 'Profiles'
+        verbose_name_plural = 'Profile'
         
     
 class Image(models.Model):
