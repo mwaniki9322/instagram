@@ -98,7 +98,7 @@ class Comment(models.Model):
         self.save()
 
     def delete_comment(self):
-        self.delete
+        self.delete()
     
     @classmethod
     def get_comment(cls):
