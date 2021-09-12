@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 
 class NewsLetterForm(forms.Form):
     your_name = forms.CharField(label='First Name',max_length=50)
-    email = forms.EmailField(label='Email')  
+    email = orms.EmailField(label='Email')  
     
 class NewImageForm(forms.ModelForm):
     class Meta:
