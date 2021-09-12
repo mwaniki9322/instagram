@@ -43,7 +43,7 @@ class Image(models.Model):
     likes = models.ManyToManyField(User, related_name = 'likes', blank = True)
 
         
-    def save_image(s
+    def save_image(self):
         self.save()
     
     def delete_image(self):
