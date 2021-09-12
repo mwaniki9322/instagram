@@ -16,7 +16,7 @@ class LocationTestCase(TestCase):
         all_locations = Location.objects.all()
         self.assertTrue(len(all_locations) > 0)
         
-    def tet_get_locations(self):
+    def test_get_locations(self):
         self.location.save_location()
         all_locations = Location.objects.all()
         self.assertTrue(len(all_locations) > 0)
