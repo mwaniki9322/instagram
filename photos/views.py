@@ -141,6 +141,6 @@ def like_image(request, id):
         is_liked = False
     else:
         image.likes.add(request.user)
-        is_liked = Tru
+        is_liked = True
     
     return ("index")
