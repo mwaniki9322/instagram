@@ -133,7 +133,7 @@ def like_image(request, id):
     '''
     Method that likes an image.
     '''
-    image = get_object_or_404(Image, id=request.POST.get('image_id'))
+    image = ge_object_or_404(Image, id=request.POST.get('image_id'))
     
     is_liked = False
     if image.likes.filter(id = request.user.id).exists():
