@@ -1,5 +1,5 @@
-# Picasso Gallery
-#### This is a personal gallery that allows a user to post pictures of things they are interested in.
+# InstaPics
+#### This is an instagram clone,it allows users to upload pctures and also view pictures from other people.
 #### By Dennis Mwaniki
 
 
@@ -8,8 +8,8 @@ FOR ADMIN:
 * Add Images
 * Add Name
 * Add Description
-* Add Category
-* Delete Images
+* Comment on Images
+* Search for a profile
 
 ## Setup Proces
 To make advancements/modifications, follow these steps:
@@ -38,24 +38,20 @@ Technologies used to develop this application:
 * OUTPUT: Page Chosen.
 
 ### 2. Search Image
-* INPUT: Category
+* INPUT: Keyname
 * OUTPUT:Search Results. 
 
 ### 3. View Image Details
 * INPUT: Click Details
 * OUTPUT:Image Details
 
-### 4. Copy Image Link
-* INPUT: Copy Link
-* OUTPUT:Alert 'link copied'
 
 
 ## To Do
-* ADD REVIEWS
 * Add custom validations to the form
 
 ### Known bugs
-* No bags reported.Raise a bug fix [here](https://github.com/mwaniki9322/Picasso-gallery.git)
+* No bags reported.Raise a bug fix [here](https://github.com/mwaniki9322/instagram.git)
 
 ## Contact
 * If you wish to reach out incase of any issue you can pull request
