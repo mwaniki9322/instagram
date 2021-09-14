@@ -4,7 +4,7 @@ from django.conf.urls import url,path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name= 'index'),
+    path('', views.index, nam= 'index'),
     path('search/', views.search_images, name='search_results'),
     path('image/<int:image_id>', views.get_image, name='image_results'),
     path('new/image$', views.new_image, name='new-image'),
