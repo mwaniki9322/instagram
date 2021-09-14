@@ -4,7 +4,7 @@
 
 
 ## Application Features
-FOR ADMIN:
+FOR User:
 * Add Images
 * Add Name
 * Add Description
