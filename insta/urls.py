@@ -14,18 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from django.conf.urls import url,include
+from django.conf.urls import url,include,path
 from django.contrib import admin
 from django.contrib.auth import views
 from registration.backends.simple.views import RegistrationView
 from photos.forms import RegisterForm
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'', include('photos.urls')),
-    url(r'^accounts/register/$',RegistrationView.as_view(form_class=RegisterForm),name='registration_register',),
-    url(r'^accounts/', include('registration.backends.simple.urls')),
-    url(r'^logout/$', views.logout, {"next_page": '/'}), 
-    url(r'^tinymce/', include('tinymce.urls')),
+    path('admin/', admin.site.urls),
+    #path(', include('photos.urls')),
+    path('accounts/register/',RegistrationView.as_view(form_class=RegisterForm),name='registration_register',),
+    path('accounts/', include('registration.backends.simple.urls')),
+    path('logout/$', views.logout, {"next_page": '/'}), 
+    path('tinymce/', include('tinymce.urls')),
 ]
 
